@@ -1,6 +1,6 @@
 body{
  background-color: #e0d4be ;
- background-image: url("images/doubleflow.JPG");
+ background-image: url("images/doubleflow.jpg");
  background-size: 50%;
  background-position: center;
  background-repeat: repeat-y;
@@ -1566,5 +1566,6 @@ h1, h2, h3,h4 {
 .aboutCol{
     flex-direction: column;
     row-gap:25px;  }
+
 
 }
