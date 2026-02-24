@@ -36,14 +36,18 @@ body {
 
 }
 
-    .webrow{
-    flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 20px;
+   .webrow{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    row-gap: 14px;
+    column-gap: 0;
   }
+
   .webrow .webCol{
-    flex: 1 1 260px;
-    max-width: 360px;
+    width: 92%;
+    max-width: 520px;
+    flex: 0 0 auto;
   }
     
 }
