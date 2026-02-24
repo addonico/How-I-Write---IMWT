@@ -617,25 +617,27 @@ border-radius: 10px;
     z-index: 10;
 }
 
-.marker::before{
-  content:"";
-  position:absolute;
-  top:-12px;
-  left:-12px;
-  width:34px;
-  height:34px;
-  border-radius:50%;
-  background:transparent;
-}
-
 .marker:hover{
   z-index: 50;
 }
 
+.marker::before{
+  content:"";
+  position:absolute;
+  top: -16px;
+  left:-16px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:transparent;
+}
+
+
+
 .tooltip {
     position: absolute;
     top: 50%;
-    left: 18px;
+    left: 10px;
     width: 220px;
     padding: 12px;
     background: #141820;
