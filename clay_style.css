@@ -1093,7 +1093,11 @@ h1, h2, h3, h4 {
         
     .N1bd .itemImg, .N2bd .itemImg, .N3bd .itemImg {
      width:70%;
-}   
+}  
+
+ .disclaimer .content {
+     margin:auto;
+}  
    
 }
 
@@ -1346,6 +1350,7 @@ h1, h2, h3, h4 {
 
 
 }
+
 
 
 
