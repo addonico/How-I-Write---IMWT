@@ -1009,17 +1009,93 @@ display:none;
   .N1bd .N1Col .intro,
   .N2bd .N2Col .intro,
   .N3bd .N3Col .intro{
-    grid-area: desc;
+    grid-area:desc;
+    justify-self:stretch;
     width: 100%;
-    margin: 0;
+    max-width: none;
+    margin:20px 0 0;
+  border: 2px solid #fbf7e8;
+  border-radius: 14px;
+  padding: 18px 22px;
+  background: #fbf7e8;
+  box-sizing: border-box;
+  }
+
+  .N1bd .N1Col .intermediate,
+  .N2bd .N2Col .intermediate,
+  .N3bd .N3Col .intermediate{
+    grid-area:desc;
+    justify-self:stretch;
+    width: 100%;
+    max-width: none;
+    margin:20px 0 0;
+  border: 2px solid #fbf7e8;
+  border-radius: 14px;
+  padding: 18px 22px;
+  background: #fbf7e8;
+  box-sizing: border-box;
+  }
+
+  .N1bd .N1Col .advanced,
+  .N2bd .N2Col .advanced,
+  .N3bd .N3Col .advanced{
+    grid-area:desc;
+    justify-self:stretch;
+    width: 100%;
+    max-width: none;
+    margin:20px 0 0;
+  border: 2px solid #fbf7e8;
+  border-radius: 14px;
+  padding: 18px 22px;
+  background: #fbf7e8;
+  box-sizing: border-box;
   }
 
   .N1bd .N1Col .intro p,
   .N2bd .N2Col .intro p,
   .N3bd .N3Col .intro p{
-    margin-top: 10px;
-    margin-bottom: 0;
+    grid-area:desc;
+    justify-self:stretch;
+    width: 100%;
+    max-width: none;
+    margin:20px 0 0;
+  border: 2px solid #fbf7e8;
+  border-radius: 14px;
+  padding: 18px 22px;
+  background: #fbf7e8;
+  box-sizing: border-box;
   }
+
+  .N1bd .N1Col .intermediate p,
+  .N2bd .N2Col .intermediate p,
+  .N3bd .N3Col .intermediate p{
+    grid-area:desc;
+    justify-self:stretch;
+    width: 100%;
+    max-width: none;
+    margin:20px 0 0;
+  border: 2px solid #fbf7e8;
+  border-radius: 14px;
+  padding: 18px 22px;
+  background: #fbf7e8;
+  box-sizing: border-box;
+  }
+
+  .N1bd .N1Col .advanced p,
+  .N2bd .N2Col .advanced p,
+  .N3bd .N3Col .advanced p{
+    grid-area:desc;
+    justify-self:stretch;
+    width: 100%;
+    max-width: none;
+    margin:20px 0 0;
+  border: 2px solid #fbf7e8;
+  border-radius: 14px;
+  padding: 18px 22px;
+  background: #fbf7e8;
+  box-sizing: border-box;
+  }
+  
   
   .N1bd .N1Col.readButtons,
   .N2bd .N2Col.readButtons,
