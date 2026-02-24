@@ -1,0 +1,1570 @@
+body{
+ background-color: #e0d4be ;
+ background-image: url("images/doubleflow.JPG");
+ background-size: 50%;
+ background-position: center;
+ background-repeat: repeat-y;
+}
+
+/*HEADER- COVER PAGE*/
+.mainHeader{
+    min-height: 80vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("images/headerpic.jpg");
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+
+.mainTitle{
+     width:90%;
+     color:#3f3a37;
+     position:absolute;
+     top:65%;
+     left:1%;
+     font-size:90px;
+     text-align: left;
+}
+
+
+.material-symbols-outlined.stop{
+    position:absolute;
+    right:4%;
+    top:90%;
+    color:#3f3a37;
+}
+
+.start{
+    margin-top: 25px; 
+    text-align: center;
+}
+
+.start p{
+    margin-top: 5px; 
+    margin-bottom:15px;
+    font-size:18px;
+    line-height:25px;
+    
+}
+
+/*NAVBAR- ALL PAGES*/
+#logo{
+    margin:auto;
+    width:80px;
+    margin-left:-30px;
+    margin-top:5px;
+}
+
+nav{
+    display:flex;
+    padding:1.5%; 
+    height:10px;
+    justify-content:space-between;
+    align-items: center;
+    background: #667463;
+    position:relative;
+}
+
+nav img{
+    width:100px;
+}
+
+.nav-links{
+    flex:1;
+    text-align:center;
+}
+
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;
+}
+
+.nav-links ul li a{
+    color:#e0d4be;
+    text-decoration: none;
+    font-size:16px; 
+    display:block;
+    font-family: "Garimond";
+}
+
+.nav-links ul li.soloBtn::after {
+    content:"";
+    width:0%;
+    height:2px;
+    background: #ab6860;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+    border:transparent;
+}
+
+.nav-links ul li.soloBtn:hover::after {
+    width:100%;  
+}
+
+.nav-links ul li ul.dropdown li button::after {
+    content:"";
+    width:0%;
+    height:2px;
+    background: #ab6860;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li ul.dropdown li button:hover::after{
+    width:90%;  
+}
+
+.nav-links ul li ul.dropdown li{
+    width:100%;
+}
+
+.nav-links ul li ul.dropdown{
+    width:125px;
+    position:absolute;
+    background-color: #ab6860; 
+    z-index:999;
+    display:none;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+
+.nav-links ul li ul.dropdown li button {
+    background-color: inherit;
+    border: none;
+    width: 80%;
+    display:block;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    color: #e0d4be;
+    font-family: "Garimond";
+    font-size:70%;
+    cursor:pointer;
+}
+
+ul li:hover ul.dropdown{
+    display:block;
+}
+
+
+.themesContainer{
+    text-align:right;
+    margin-right:5px;
+   
+}
+
+.themesContainer li{
+    list-style:none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;
+    
+}
+
+.themesContainer li a{
+    color:#e0d4be;
+    text-decoration: none;
+    font-size:16px; 
+    display:block;
+    font-family: "Garimond";
+    cursor: pointer;
+}
+
+.themesContainer li.soloBtn::after {
+    content:"";
+    width:0%;
+    height:2px;
+    background: #ab6860;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+    border:transparent;
+}
+
+.themesContainer li.soloBtn:hover::after {
+    width:100%;  
+}
+
+.themesContainer li ul.dropdown li button::after {
+    content:"";
+    width:0%;
+    height:2px;
+    background: #ab6860;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.themesContainer li ul.dropdown li button:hover::after{
+    width:90%;  
+}
+
+.themesContainer li ul.dropdown li{
+    width:100%;
+}
+
+.themesContainer li ul.dropdown{
+    width: 100px;
+    position:absolute;
+    right:0;
+    left:auto;
+    margin:auto;
+    background-color: #667463; 
+    z-index:999;
+    display:none;
+    list-style:none;
+    padding:0;
+    
+    
+}
+
+
+.themesContainer li ul.dropdown li button {
+    background-color: inherit;
+    border: none;
+    width: 80%;
+    display:block;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    color: #e0d4be;
+    font-family: "Garimond";
+    font-size:70%;
+    cursor:pointer;
+}
+
+li:hover ul.dropdown{
+    display:block;
+}
+
+
+.homeButton{
+    display:inline-block; 
+    text-decoration:none;
+    color:#e0d4be;
+    padding: 12px 34px;
+    font-size:20px;
+    background:#667463;
+    position:relative;
+    cursor:pointer;
+    
+}
+
+.open{
+    display:none;
+}
+
+.close{
+    display:none; 
+}
+
+/*DESCRIPTION- COVER PAGE*/
+
+.description  {
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+
+.description h1{
+    font-size:36px;
+    font-weight:600;
+}
+
+.description p{
+    color:#3f3a37;
+    font-size:18px;
+    font-weight:300;
+    line-height:25px;
+    margin-top:15px;
+    width:45%;
+}
+
+.description .row p{
+    text-align: justify;
+    font-size:15px;
+    width:80%;
+}
+
+.description .row{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+.descrCol{
+    flex-basis:31%;
+    background:#db9b8f; 
+    border-radius:10px;
+    margin-bottom:5%;
+    padding-bottom: 10px;
+    box-sizing:border-box;
+    transition: 0.5s;
+}
+
+.description h3{
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;
+}
+
+.descrCol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+/*WEBSITE- COVER PAGE*/
+
+.website{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+}
+
+.website p{
+    padding-top:0;
+    width:45%;
+    font-size:18px;
+    line-height:25px;
+    margin-top:30px;
+}
+
+.webrow{
+    display:flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
+    column-gap: 60px;
+}
+
+.webrow:first-of-type{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.webrow .webCol{
+    background-color: #667463;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px 10px;
+    flex:0 0 calc(20% - 10px);
+}
+
+.webrow .webCol p{
+    font-size: 14px;   
+    text-align:center;
+    width:80%;
+    margin-top:0;
+}
+
+.webBtn{
+    border:none;
+    background-color: transparent;
+    font-family: "Protest Revolution";
+    color:#e0d4be;
+    font-size: 18px;
+    cursor:pointer;
+}
+
+.webrow .claybox:hover{
+    background-color:#7b2500;
+}
+
+.webrow .claybox:hover .webBtn{
+    font-family:"Julius Sans One";
+    color: #edba77;
+}
+
+.webrow .woodbox:hover{
+    background-color:#667463;
+}
+
+.webrow .woodbox:hover .webBtn{
+    font-family:"Protest Revolution";
+    color:#e0d4be;
+}
+
+.webrow .typebox:hover{
+    background-color:#af9b67;
+}
+
+.webrow .digibox:hover{
+    background-color:#0d1117;
+}
+
+.webrow .webCol:hover .webBtn{
+    text-decoration: underline;
+    transition:0.5s;
+}
+
+.webrow .claybox:hover p {
+    color:#edba77;
+    font-family: "Julius Sans One";
+}
+
+.webrow .woodbox:hover p {
+    color:#e0d4be;
+    font-family: "Garimond";
+}
+
+.webrow .typebox:hover p, .webrow .typebox:hover .webBtn{
+    color:#935656;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.webrow .digibox:hover p, .webrow .digibox:hover .webBtn {
+    color:#00ffc6;
+    font-family: "Roboto Mono", monospace;
+    text-shadow: 0 0 8px #78ffe1;
+}
+
+.website a{
+    text-decoration:none;
+    color:#3f3a37;
+}
+
+.website a:hover{
+    text-decoration:underline;
+    transition:0.5s;
+}
+
+/*NARRATIVES- COVER PAGE*/
+.narratives{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+}
+
+.narratives p{
+    margin-top:15px;
+    font-size:18px;
+    line-height: 25px;
+    width:45%;
+
+}
+.narrativesCol{
+    flex-basis:32%;
+    border-radius:10px;
+    margin-top: 20px;
+    margin-bottom:30px;
+    position:relative;
+    overflow:hidden;
+    text-align: center;
+    display:flex;
+    justify-content: center; /*aligns horizontally*/
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.narrativesCol img{
+    width:30%;
+    display:block;
+    margin:auto;
+}
+
+.layer{
+    background:transparent;
+    height:100%;
+    width:30%;
+    position:absolute;
+    transition:0.5s;
+}
+
+.layer:hover{
+    background:#ab6860;
+}
+
+.layer h3{
+    width:100%;
+    font-weight:500;
+    color:#3f3a37;
+    font-family: "Garimond";
+    font-size:24px;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    position:absolute;
+    opacity:0;
+    transition:0.5s;
+}
+
+.layer:hover h3{
+    bottom:30%;
+    opacity:1;
+}
+
+
+
+/*MAP- COVER PAGE*/
+.map{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    margin-top:100px;
+}
+
+.map p{
+    width:45%;
+    font-size: 18px;
+    line-height: 22px;
+} 
+
+.mapCol{
+    flex-basis:31%;
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom:5%;
+    text-align:center;
+}
+
+.mapCol img{
+    width:40%;
+    max-width:1000px;
+    margin:auto;
+    border-radius:10px;
+}
+
+.map p{
+    margin-top:15px;
+}
+
+.mapCol h3{
+    margin-top:16px;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+
+
+
+
+#outroLink{
+    text-decoration: none;
+    color:#3f3a37;
+}
+
+#outroLink:hover{
+    text-decoration: underline;
+    text-decoration-color: #3f3a37;
+    transition:0.5s; 
+}
+
+/*NARRATIVE 1 PAGE*/
+
+.pageContent{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+
+.side{
+  flex: 0 0 0px;  
+}
+
+
+.content{
+  flex: 1;
+  padding: 2rem;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0;
+  min-height: 80vh;
+  max-width: 80%;
+  padding-top: 15px;
+  background: radial-gradient(circle, #e0d4be 70%, #dfccab, #ddc49b);
+  border: solid 2px #716040;
+}
+
+
+
+
+p,td  {
+    color:#3f3a37;
+    font-family: "Garimond";
+    font-weight: 400;
+    margin:auto;
+    margin-top:90px;
+    width:50%;
+    text-align:center;
+}
+
+h1, h2, h3,h4 {
+    font-family: "Protest Revolution";
+    text-align:center;
+    color:#667463;
+    padding-top:30px;
+}
+
+
+#narrTitle{
+   font-size: 75px;
+}
+
+
+/*CONTENT- NARRATIVE 1 PAGE*/
+
+
+.N1bd .N1Col, .N2bd .N2Col, .N3bd .N3Col{
+  max-width: 100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, minmax(0, max-content));
+  gap:20px;
+  position:relative;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: 
+  "box1 box1"
+  "box2 box3"
+  ". ."
+  "box4 box4"
+  "box5   box5"
+  ".    box6";
+}
+
+
+
+.N1bd .content, .N2bd .content, .N3bd .content{
+  margin-top:20px;
+  padding-top:0;
+}
+
+.itemTitle{
+    position:relative;
+    grid-area: box1;
+}
+
+.itemImg{
+    grid-area: box2;
+    max-width: 90%;
+    min-height: 200px;
+    padding-left:30px;
+}
+
+.intro, .N1bd .intermediate, .N1bd .advanced{
+    grid-area: box4;
+}
+
+.readButtons{
+    grid-area: box5;
+}
+
+.buttons{
+    grid-area: box6;
+}
+
+.N1bd .row, .N2bd .row, .N3bd .row{
+     display:none;
+     text-align: center;
+     max-width:95%;   
+}
+
+.N1bd .row p, .N2bd .row p, .N3bd .row p{
+    position:static;
+    text-align: justify;
+}
+
+
+.N1bd .row:first-of-type, 
+.N2bd .row:first-of-type,
+.N3bd .row:first-of-type{
+    display:block; 
+}
+
+
+.N1bd table, .N2bd table, .N3bd table{
+    grid-area: box3;
+    border-spacing:20px 0;
+    width:600px;
+    table-layout: fixed;
+}
+
+.N1bd table td:first-child, 
+.N2bd table td:first-child,
+.N3bd table td:first-child { 
+    border-right: 2px solid #667463; 
+    padding-right:15px;
+}
+
+#finish{
+    display:block;
+    background-color: #667463;
+    display:inline-block; 
+    padding: 10px 10px;
+    cursor:pointer;
+    border:none; 
+}
+
+#finish a{
+    text-decoration: none;
+    color:#e0d4be;
+    font-family: "Protest Revolution";
+    font-size: 13px;
+}
+
+
+.intro .short{
+    display:none;
+}
+
+.medium{
+    display:none;
+}
+
+.long{
+    display:none;
+}
+
+.intermediate{
+    display:none;
+}
+
+.advanced{
+    display:none;
+}
+
+
+#message{
+    display:none;
+    padding-top: 50px;
+    text-align: center;
+    position:relative;
+    max-width: 75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#message p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.N1Col.final.buttons, .N2Col.final.buttons, .N3Col.final.buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    margin-top:15px;
+}
+
+
+
+
+.chooseBtn{
+    background-color: #667463;
+    font-family: "Protest revolution";
+    display:inline-block; 
+    text-decoration:none;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor:pointer;
+    color:#e0d4be;
+    border:none;   
+}
+
+.chooseBtnContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+
+}
+
+.chooseLvl p{
+  margin-top: 5px;
+  text-align: center;
+}
+
+
+
+#introBtn{
+   font-size: 13px;
+}
+
+#interBtn{
+   font-size: 13px;
+}
+
+#advBtn{
+   font-size: 13px;
+}
+
+
+.N1bd .readBtn, .N2bd .readBtn, .N3bd .readBtn {
+    padding: 10px 10px;
+    background-color: #667463;
+    font-family: "Protest Revolution"; 
+    text-decoration:none;
+    font-size: 13px;
+    cursor:pointer;
+    color:#e0d4be;
+    border:none;
+    width:100px;
+}
+
+.N1bd .readButtons, .N2bd .readButtons, .N3bd .readButtons {
+    display:inline-block;
+    position:relative;
+}
+
+.back {
+    padding: 10px 10px;
+    background-color: #667463;
+    font-family: "Protest Revolution";
+    text-decoration:none;
+    font-size: 13px;
+    cursor:pointer;
+    color:#e0d4be;
+    border:none;  
+}
+
+.next {
+    padding: 10px 10px;
+    background-color: #667463;
+    font-family: "Protest Revolution";
+    text-decoration:none;
+    font-size: 13px;
+    cursor:pointer;
+    color:#e0d4be;
+    border:none;
+}
+
+.N1Col.buttons, .N2Col.buttons, .N3Col.buttons{
+    position:relative;
+    display:flex;
+    gap:5px;
+}
+
+
+
+.title{
+     color:#3f3a37;
+     font-size:95px;
+     text-align: center;
+     font-family: "Protest Revolution";
+     margin: 0 0 10px;
+}
+
+.N3bd .itemTitle{
+     font-size:40px;
+   
+}
+
+
+
+
+
+/*FOOTER- ALL PAGES*/
+
+.footer{
+    width:100%;
+    min-height: fit-content;
+    margin-top: 50px;
+    text-align:center;
+    padding:30px 0;
+    background-color: #667463;
+}
+
+.footer p{
+    text-align:center;
+    margin-top:10px;
+    font-family: "Garimond";
+    color:#3f3a37;
+    justify-content: center;
+}
+
+.footer h4{
+    margin-bottom:25px;
+    margin-top:20px;
+    font-weight:600;
+    font-family: "Garimond";
+    color: #3f3a37;
+}
+
+.icons .website{
+   margin:0 13px;
+   cursor:pointer;
+   margin-top:10px;
+}
+
+
+
+/*NAVBAR ICONS- ALL PAGES*/
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  color:#ddc49b;
+  font-size:24px;
+  cursor: pointer;
+}
+
+
+
+
+
+/*DISCLAIMER PAGE*/
+.disclaimer .content{
+  display:flex;
+  align-items: center;
+  margin-left:110px;
+  margin-top:20px;
+  padding-top:0;
+}
+
+.disclaimer .content p{
+  width:80%;
+  margin-top:10px;
+}
+
+.disclaimer .content ul li {
+  font-size: 15px;
+  font-family: "Garimond";
+  color:#3f3a37;
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:15px;
+}
+
+
+
+
+
+/*MAP PAGE*/
+.mapPage .content{
+  display:flex;
+  align-items: center;
+  margin-left:110px;
+  margin-top:20px;
+  padding-top:0;
+}
+
+/* ---------- Interactive Map ---------- */
+  .mapPage .content p{
+    margin: 15px;
+  } 
+   .mapPage .content h1{
+    font-style:36px;
+  } 
+
+  .interactive-map {
+    position: relative; 
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .interactive-map img {
+    width: 100%;
+    height:auto;
+    display:block;
+    
+  }
+  
+  .marker {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #1d1a16;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .marker:hover {
+    z-index: 50;
+  }
+
+.marker::before{
+    content:"";
+    position:absolute;
+    top:-12px;
+    left:-12px;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:transparent;
+  }
+  
+  .tooltip {
+    position: absolute;
+    z-index: 60;
+    top: 50%;
+    left: 18px;
+    background: #fbf7e8;
+    border: 1px solid #c8c0a8;
+    padding: 12px;
+    width: 220px;
+    display: none;
+    text-align: left;
+    pointer-events: auto;
+
+  }
+  
+  .marker:hover .tooltip,
+  .marker .tooltip:hover {
+    display: block;
+  }
+ 
+  .tooltip h4 {
+    margin: 0 0 6px 0;
+    font-family: "Protest Revolution";
+  }
+  
+  .tooltip a {
+    color: #1d1a16;
+    text-decoration: underline;
+    font-family: "Protest Revolution";
+    color:#3f3a37;
+  }
+
+.mapPage .tooltip p{
+    margin-top:0px;
+    width:80%;
+  }
+
+/*NARRATIVES PAGE*/
+
+.narrContainer{
+  align-items: center;
+  padding-bottom:10px;
+  margin:auto;
+  padding-top:30px;
+}
+
+.narrBtn{
+  background-color: #667463;
+  padding:10px 10px;
+  border:none;
+  margin-right:10px;
+
+}
+
+.narrBtn a{
+  text-decoration:none;
+  font-size: 13px;
+  font-family: "Protest Revolution";
+  color:#e0d4be;
+}
+
+.narrIntro .content{
+  display:flex;
+  align-items: center;
+  margin-left:110px;
+  margin-top:20px;
+  padding-top:0;
+}
+.narrIntro p{
+  width:60%;
+  text-align: justify;
+  margin-top:20px;
+}
+
+.narrIntro .narrContainer{
+  margin-top:-20px;
+  width:50%;
+}
+
+.narrIntro .narrRow{
+  display: flex;
+  flex-direction: column; 
+  margin-bottom:30px;
+}
+
+.narrIntro .narrPageCol{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+}
+
+.narrIntro .narrPageCol p{
+  margin-top:5px;
+}
+
+.narrBtn{
+  flex:0 1 160px; /*dont allow grow, allow shrinking, preferred width */
+}
+
+.narrBtn a{
+  font-size:18px;
+}
+
+
+/*ABOUT PAGE*/
+
+.aboutCol{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom:50px;  }
+
+.aboutMainPage h1{
+   font-size: 45px;
+  }
+.aut{
+   padding:0;
+   position:relative;
+   display:inline-block;
+  }
+
+.aboutCol img{
+   width:350px;
+   height:400px;
+   display: block;
+  }
+
+.aboutLayer{
+   background:transparent;
+   top: 0;
+   left: 0;
+   width: 100%;              /* exactly matches image size */
+   height: 100%;
+   position:absolute;
+   margin: auto;
+   transition:0.5s;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+  }
+
+.aboutLayer:hover{
+    background:#ab6860;
+}
+
+.aboutLayer h3, .aboutLayer p{
+    width:100%;
+    color:transparent;
+    font-size:18px;
+    margin:10px;
+}
+
+.aboutLayer:hover h3, .aboutLayer:hover p{
+    opacity:1;
+    color:#3f3a37;
+}
+
+
+
+/*DOCUMENTATION PAGE*/
+.documentation a{
+    text-decoration-color: #3f3a37;
+    color:#3f3a37;
+}
+
+.documentation .content{
+    display:flex;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    margin-top:10px;
+    width:80%;
+}
+
+.documentation p{
+    text-align: justify;
+    margin-top:5px;
+}
+
+
+
+@media(max-width:900px){
+  .disclaimer .content,
+  .mapPage .content, 
+  .documentation .content,
+  .narrIntro .content{
+  margin-left:40px;
+}  
+  #logo{
+    margin:auto;
+    width:50px;
+    margin-left:-10px;
+    margin-top:5px;
+}
+
+   .nav-links ul li a, #themes{
+     font-size: 14px;   
+}
+   nav{
+     height:15px;
+}
+
+   .description p, .narratives p, .website p, .map p{
+    width:60%;
+}
+
+   .description .row{
+    flex-direction:column;
+    
+
+}
+
+    .descrCol{
+    width:60%;
+    align-self: center;
+}
+
+   .narrativesCol img{
+    width:60%;
+}
+
+   .narrativesCol .layer{
+    width:60%;
+}
+
+   .narrIntro .narrRow{
+     margin-top:30px;
+}
+
+    .narrIntro .narrPageCol{
+     gap: 20px;
+}
+
+    .mapPage .marker,.map .marker{
+    width:10px;
+    height:10px;
+}
+
+    .mapPage .tooltip, .map .tooltip{
+    width:150px;
+    box-sizing: border-box;
+    left:10px;
+}
+
+    .mapPage .tooltip p, .map .tooltip p{
+    font-size: 13px;
+    width:80%;
+    margin-left:0px;
+}
+
+    .mapPage .tooltip h4, .map .tooltip h4{
+    font-size: 16px;
+    left:0px;
+    width: 90%; 
+}
+
+    .mapPage .tooltip a, .map .tooltip a{
+    font-size: 13px;
+}
+
+   .itemImg{
+    width:90%;
+}
+
+.N1bd table, .N2bd table, .N3bd table{
+    max-width:300px;
+}
+
+
+}  
+
+
+@media(max-width:700px){
+
+   body{
+     background-size: 65%;
+     background-position: center;
+     background-repeat: repeat-y;
+}
+  .disclaimer .content,
+  .mapPage .content, 
+  .documentation .content,
+  .narrIntro .content{
+  margin-left:20px;
+  margin-top:20px;
+}  
+  .mainHeader{
+        min-height: 70vh;
+        width:100%;
+    }
+
+   .mainTitle {
+        position:absolute;
+        font-size: 40px;
+        top:65%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align:left;
+    }
+
+    .header{
+        min-height: 30px;
+    }
+
+    nav{
+        min-height: 30px;
+    }
+
+     .themesContainer li{
+        display:block;
+    }
+
+    .themesContainer li a, 
+    .homeButton{
+        font-size: 15px;
+    }
+
+    .themesContainer {
+        position: absolute;
+        right:80px; 
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .stop {
+        margin-top:15px;
+    }
+    .start{
+        margin-top:10px;
+    }
+    
+    .start p{
+        font-size:18px;
+    }
+
+    #logo{
+        width: 60px;
+        margin-left:-5px;
+    }
+
+    .nav-links ul li{
+        display:block;
+    }
+
+    .nav-links{
+    position:absolute;
+    background: #667463;
+    height:600px;
+    width:200px;
+    top:44px;
+    right:-210px;
+    text-align:left;
+    z-index:100; 
+    transition:1s;
+    font-size:15px;
+    display:none;
+    }
+
+     .open, .close{
+     display:block;
+     margin:10px;
+     font-size:15px;
+     cursor:pointer;
+    }
+
+    .close{
+     font-size:22px;   
+    }
+
+    .nav-links ul{
+     padding:30px;   
+    }
+
+    .nav-links ul li a{
+     font-size: 15px;
+    }
+    
+    .description p, .narratives p, .website p, .map p{
+    font-size:15px;
+    width:60%;
+    }
+
+    .website .webrow{
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .website .webCol{
+    width:200px;
+    }
+
+
+    .description .row{
+    flex-direction:column;
+}
+
+    .descrCol{
+    width:400px;
+    padding-top:0;
+}
+
+    .narrativesCol img{
+    width:100%;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+
+    .narrativesCol .layer{
+    height:100%;
+    width:100%;
+}
+
+     .mapCol img{
+    width:100%;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+
+
+    .narrIntro .narrContainer{
+    margin-top:40px;
+    }
+
+    .narrIntro .narrPageCol{
+    flex-direction: column;
+    }
+
+    .narrIntro .narrBtn{
+       flex: 0 1 40px;
+    }
+
+    .narrIntro .narrPageCol p{
+    width:100%;
+    margin-top: 15px;
+    }
+
+    .mapPage .marker,
+    .map .marker{
+    width:7px;
+    height:7px;
+}
+
+    .mapPage .tooltip, 
+    .map .tooltip{
+    width:95px;
+    box-sizing: border-box;
+    left:10px;
+}
+
+    .mapPage .tooltip p,
+    .map .tooltip p{
+    font-size: 10px;
+    width:80%;
+    margin-left:0px;
+}
+
+    .mapPage .tooltip h4,
+    .map .tooltip h4{
+    font-size: 13px;
+    left:0px;
+    width: 90%;
+    
+}
+
+    .mapPage .tooltip a,
+    .map .tooltip a{
+    font-size: 10px;
+
+}
+
+    .N1bd .side, .N2bd .side, .N3bd .side{
+     flex: 0 0 0;
+     border:none;
+}
+
+    .N1bd .N1Col, .N2bd .N2Col, .N3bd .N3Col{
+  width: 70%;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, minmax(0, max-content));
+  grid-template-areas: 
+  "box1"
+  "box2"
+  "box3"
+  "box4"
+  "box5"
+  "box6";
+  
+}
+.N1bd div p, .N2bd div p, .N3bd div p{
+     padding-top:0;
+     width:90%;
+     
+}
+    
+.itemImg{
+    width:70%;
+    justify-self: center;
+    transform: translateX(-5%);
+
+}
+
+    .N1bd td, .N2bd td, .N3bd td{
+     font-size:13px;
+
+}
+
+    .N1bd table, .N2bd table, .N3bd table{
+     justify-self:center;
+     max-width: 400px;
+
+    
+
+}
+
+     #message{
+    display:none;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.final.buttons{
+    margin:auto;
+}
+    .N1bd .readButtons, .N2bd .readButtons, .N3bd .readButtons{
+     display:block;  
+}
+
+    .N1bd .buttons, .N2bd .buttons, .N3bd .buttons{
+     display:inline;
+}
+
+    .N1bd .readBtn, .N2bd .readBtn, .N3bd .readBtn{
+     display:inline;
+}
+
+    .N1bd .back, .N2bd .back, .N3bd .back{
+     position:relative;
+     display: inline;
+}
+
+    .N1bd .next, .N2bd .next, .N3bd .next{
+     position:relative;
+     display: inline;
+}
+
+.aboutCol{
+    flex-direction: column;
+    row-gap:25px;  }
+
+}

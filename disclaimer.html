@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Disclaimer</title>
+   <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+   
+   <link rel="stylesheet" href="clay_style.css" id="t1">
+   <link rel="stylesheet" href="wood_style.css" id="t2" disabled>
+   <link rel="stylesheet" href="typewriter.css" id="t3" disabled>
+   <link rel="stylesheet" href="digital.css" id="t4" disabled>
+</head>
+<body class="disclaimer">
+   <section class="subHeader">
+      <nav id="navbar">
+         <a href="index.html"><img src="images\logonobgcut.png" id="logo"></a>
+         <div class="nav-links" id="navLinks">
+            <span class="material-symbols-outlined close" onclick="hideMenu()">close</span>
+            <ul>
+               <li class="soloBtn"><a href="index.html">Home</a></li>
+               <li class="soloBtn"><a href="map.html">Map</a></li>
+               <li class="soloBtn"><a href="narr_intro.html">Narratives</a></li>
+               <li class="soloBtn"><a href="about.html">About</a></li>
+               <li class="soloBtn"><a href="documentation.html">Documentation</a></li>
+               <li class="soloBtn"><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+         </div>
+         <div class="themesContainer">
+               <li>
+                  <a id="themes" href="" class="soloBtn">Themes</a>
+                  <ul class="dropdown">
+                  <li><button id="clay" class="changeButton" onclick="change('t1')"> Clay tablet</button></li>
+                  <li><button id="woodcut" class="changeButton" onclick="change('t2')"> Woodcut </button></li>
+                  <li><button id="typewriter" class="changeButton" onclick="change('t3')"> Typewriter</button></li>
+                  <li><button id="digital" class="changeButton" onclick="change('t4')">Digital </button></li>
+                  </ul>
+               </li>
+         </div>
+         <span class="material-symbols-outlined open" onclick="showMenu()">menu</span>
+      </nav>
+   </section>
+
+   <section class="content">
+     <h1>Disclaimer</h1> 
+     <p>This website was created as the project for the final examination for the course “Information Modeling and Web technologies” of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under prof. Fabio Vitali. The images and metadata of the museum objects were chosen for their importance and relevance. Their publication here is not meant to be an alternative or replace their original locations: all copyrights and related rights remain with their original owners. In particular, in no specific order:</p>
+      <ul><li>British Museum, London (UK)(https://www.britishmuseum.org): tablet from the Amarna Letters; Papyrus; Vindolanda Tablet; Roman Inkwell;</li>
+           <li>The MET, Metropolitan Museum of Art, New York (USA) (https://www.metmuseum.org): Inkstone in the form of a Qin; Night-shining white; Ten bamboo studio collection of calligraphy and painting.</li>
+           <li>Harry Ransom Center, The University of Texas at Austin (USA) (https://hrc.contentdm.oclc.org): Gutenberg Bible</li>
+           <li>National Museum of American History, Washington (USA) (https://americanhistory.si.edu) : Quill pen; Early fountain pen; Sholes and Glidden type-writer; Underwood model 5; Blickensderfer No. 5 typewriter;IBM PC 5150 Microcomputer processor; Apple Lisa; Apple Cadillac PDA;</li>
+           <li>Museo Nazionale Scienza e Tecnologia Leonardo Da Vinci, Milano (IT) : Olivetti lettera 22</li>    
+           <li>Smithsonian Institution, USA (https://www.si.edu ): IBM Selectric Typewriter; IBM 6568 Displaywriter;U.S. Robotics Palm Pilot 5000</li> 
+      
+         </ul>
+
+       <p>The typographic and layout choices are on the students (2026 ©JiayiTeresa). The descriptive texts for the objects were written by the students based on the information available and may contain mistakes on the contents, dates or descriptions. The cover images (yellow icon on grey background) for the narratives in the Homepage were created in Canvas; the header image and the images in the About page were AI-generated on Canvas. The clay-like sides in the Clay theme are from Pixabay. </p>
+   </section>
+
+   <section class="footer">
+       <h4>About us</h4>
+      <p>This is a university project for the final examination of the Information Modeling and Web Technology course at the University of Bologna, Italy.<br> 
+         All copyrights and related rights on the content remain with their original owners. 
+         <br>To know more, see our <a href="disclaimer.html" id="outroLink">disclaimer</a>. <br> All copyright on the typographic and layout choices are 2026 ©JiayiTeresa
+</p>
+   </section>
+   <script src="howiwrite.js"></script>
+</body>

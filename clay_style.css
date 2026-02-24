@@ -1,0 +1,1347 @@
+body {
+ background-color: #edba77;
+}
+
+/*HEADER IN THE COVER PAGE*/
+.mainHeader{
+    min-height: 80vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("images/headerpic.jpg");
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+
+.mainTitle{
+     width:90%;
+     color:#020826;
+     position:absolute;
+     top:65%;
+     left:1%;
+     font-size:90px;
+     text-align: left;
+}
+
+.material-symbols-outlined.stop{
+    position:absolute;
+    right:4%;
+    top:90%;
+    color:#020826;
+}
+
+.start{
+    margin-top: 25px; 
+    text-align: center;
+}
+
+.start p{
+    margin-top: 5px; 
+    margin-bottom:15px;
+    font-size:18px;
+    color:#020826;
+}
+
+
+/*NAVBAR- ALL PAGES*/
+
+#logo{
+    margin:auto;
+    width:80px;
+    margin-left:-30px;
+    margin-top:5px;
+}
+
+nav{
+    display:flex;
+    padding:1.5%; 
+    height:10px;
+    justify-content:space-between;
+    align-items: center; /*all children*/
+    background: #7b2500;
+    position:relative;
+}
+
+
+.nav-links{
+    flex:1;
+    text-align:center; /*fixed to be centered, by eliminating flex 1 in themesContainer*/
+    padding: 0;
+}
+
+
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;    
+}
+
+.nav-links ul li a{
+    color:#EEDD99;
+    text-decoration: none;
+    font-size:16px; 
+    display:block;
+    font-family: "Julius Sans One";
+}
+
+.nav-links ul li.soloBtn::after {
+    content:"";
+    width:0%;
+    height:2px;
+    background: #020826;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+    border:transparent;
+}
+
+.nav-links ul li.soloBtn:hover::after {
+    width:100%;  
+}
+
+.themesContainer{
+    text-align:right;
+    margin-right:5px;
+}
+
+.themesContainer li{
+    list-style:none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;
+}
+
+.themesContainer li a{
+    color:#EEDD99;
+    text-decoration: none;
+    font-size:16px; 
+    display:block;
+    font-family: "Julius Sans One";
+    cursor: pointer;
+}
+
+.themesContainer li .soloBtn::after {
+    content:"";
+    width:0%;
+    height:2px;
+    background: #020826;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+    border:transparent;
+}
+
+.themesContainer li .soloBtn:hover::after {
+    width:100%;  
+}
+
+.themesContainer li ul.dropdown li button::after {
+    content:"";
+    width:0%;
+    height:2px;
+    background: #020826;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+    
+}
+.themesContainer li ul.dropdown li button:hover::after{
+    width:90%;  
+}
+
+.themesContainer li ul.dropdown li{
+    width:100%;
+}
+
+.themesContainer li ul.dropdown{
+    width: 100px;
+    position:absolute;
+    right:0;
+    left:auto;
+    margin:auto;
+    background-color: #7b2500; 
+    z-index:999;
+    display:none;
+    list-style:none;
+    padding:0;
+    
+    
+}
+
+
+.themesContainer li ul.dropdown li button {
+    background-color: inherit;
+    border: none;
+    width: 80%;
+    display:block;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    color: #EEDD99;
+    font-family: "Julius Sans One";
+    font-size:70%;
+    cursor:pointer;
+}
+
+li:hover ul.dropdown{
+    display:block;
+}
+
+
+.homeButton{
+    display:inline-block; 
+    text-decoration:none;
+    color:#EEDD99;
+    font-family: "Julius Sans One";
+    padding: 12px 34px;
+    font-size:20px;
+    background:#7b2500;
+    position:relative;
+    cursor:pointer;
+    
+}
+
+.open{
+    display:none;
+}
+
+.close{
+    display:none; 
+}
+
+
+.header{
+    width:100%; 
+}
+
+/*DESCRIPTION- COVER PAGE*/
+
+.description  {
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+
+.description h1{
+    font-size:36px;
+    font-weight:600;
+}
+
+.description p{
+    color:#020826;
+    font-size:18px;
+    font-weight:300;
+    line-height:22px;
+    padding:10px;
+}
+
+.description .row{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+.descrCol{
+    flex-basis:31%;
+    background:#8c7851;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing:border-box;
+    transition: 0.5s;
+}
+.descrCol p{
+    color:#020826;
+}
+
+.description h3{
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;
+}
+
+.descrCol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+/*WEBSITE- COVER PAGE*/
+
+.website{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+}
+
+.webrow{
+    display:flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
+    column-gap: 60px;
+}
+
+.webrow:first-of-type{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.webrow .webCol{
+    background-color: #7b2500;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px 10px;
+    flex:0 0 calc(20% - 10px);
+}
+
+.webrow .webCol p{
+    font-size: 14px;  
+}
+
+.webBtn{
+    border:none;
+    background-color: transparent;
+    font-family: "Julius Sans One";
+    color:#edba77;
+    font-size: 18px;
+    cursor:pointer;
+}
+
+.webrow .claybox:hover{
+    background-color:#7b2500;
+}
+
+.webrow .woodbox:hover{
+    background-color:#667463;
+}
+
+.webrow .woodbox:hover .webBtn{
+    font-family:"Protest Revolution";
+    color:#e0d4be;
+}
+
+.webrow .typebox:hover{
+    background-color:#af9b67;
+}
+
+.webrow .digibox:hover{
+    background-color:#0d1117;
+}
+
+.webrow .webCol:hover .webBtn{
+    text-decoration: underline;
+    transition:0.5s;
+}
+
+
+.webrow .claybox:hover p {
+    color:#edba77;
+    font-family: "Julius Sans One";
+}
+
+.webrow .woodbox:hover p {
+    color:#e0d4be;
+    font-family: "Garimond";
+}
+
+.webrow .typebox:hover p, .webrow .typebox:hover .webBtn{
+    color:#935656;
+    font-family: "Courier New", Courier, monospace;
+    font-weight:bold;
+}
+
+.webrow .digibox:hover p, .webrow .digibox:hover .webBtn {
+    color:#00ffc6;
+    font-family: "Roboto Mono", monospace;
+    text-shadow: 0 0 8px #78ffe1;
+}
+
+.website a{
+    text-decoration:none;
+    color:#020826;
+}
+
+.website a:hover{
+    text-decoration:underline;
+    transition:0.5;
+}
+
+
+/*NARRATIVES- COVER PAGE*/
+.narratives{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+}
+
+.narratives p{
+    padding-top:10px;
+    padding-bottom: 10px;
+    color:#020826;
+    font-size:18px;
+}
+
+.narrativesCol{
+    display:flex;
+    flex-basis:32%;
+    border-radius:10px;
+    margin-bottom:30px;
+    position:relative;
+    overflow:hidden;
+    text-align: center;
+    justify-content: center; /*aligns horizontally*/
+    align-items: center;
+    flex-direction: column;
+}
+
+.narrativesCol img{
+    width:30%;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+
+.layer{
+    background:transparent;
+    height:100%;
+    width: 30%;
+    position:absolute;
+    margin: auto;
+    transition:0.5s;
+    
+    
+}
+
+.layer:hover{
+    background:#020826;
+}
+
+.layer h3{
+    width:100%;
+    font-weight:500;
+    color:#EEDD99;
+    font-size:24px;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    position:absolute;
+    opacity:0;
+    transition:0.5s;
+}
+
+.layer:hover h3{
+    bottom:30%;
+    opacity:1;
+}
+
+
+
+/*MAP- COVER PAGE*/
+.map{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+
+.map p{
+    padding:0;
+    color:#020826;
+    font-size:18px;
+
+}
+.mapCol{
+    flex-basis:31%;
+    border-radius:10px;
+    margin-bottom:5%;
+    text-align:center;
+}
+
+.mapCol img{
+    width:40%;
+    max-width:1000px;
+    margin:auto;
+    border-radius:10px;
+}
+
+.mapCol h3{
+    margin-top:16px;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+
+
+
+
+#outroLink{
+    text-decoration: none;
+    color:#020826;
+}
+
+#outroLink:hover{
+    text-decoration: underline;
+    text-decoration-color: #020826;
+    transition:0.5s; 
+}
+
+
+
+/*NARRATIVEs 1-2-3*/
+.pageContent{
+  display: flex;
+  min-height: 100vh;
+}
+
+.side{
+  flex: 0 1 200px;          /* fixed width, no distortion */
+  background-image: url("images/oleg_mit-soil-5342049_1280.jpg");
+  background-size: cover;   /* fill height without distortion */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content{
+  flex: 1;
+  padding: 2rem;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0;
+  min-height: 100vh;
+  padding-top: 15px;
+  background-color: #edba77;
+}
+
+.N1Col, .N2COl, .N3COl{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p, td   {
+    color:#020826;
+    font-family: "Archivo Narrow";
+    margin-top:5px;
+    margin-bottom:5px;
+    text-align:center;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Julius Sans One";
+    text-align:center;
+    color:#020826;
+}
+
+
+/*CONTENT- NARRATIVE 1 PAGE*/
+
+.N1bd .row, .N2bd .row, .N3bd .row {
+     display:none;
+     padding-top: 50px;
+     text-align: center;
+     align-items: center;
+}
+
+
+
+.N1bd .row p, .N2bd .row p, .N3bd .row p{
+     width:70%;
+     margin:auto;
+     margin-top:10px;
+}
+
+.N1bd .row:first-of-type,
+.N2bd .row:first-of-type,
+.N3bd .row:first-of-type{
+    display:block;
+    
+}
+
+.N1bd table, .N2bd table, .N3bd table{
+    margin-top: 15px;
+    border-spacing:20px 0;
+    width:600px;
+    table-layout: fixed;
+   
+}
+
+.N2bd table, .N3bd table{
+    margin:0 auto;
+    margin-top: 15px;
+}
+
+
+.N1bd table td:first-child,
+.N2bd table td:first-child, 
+.N3bd table td:first-child { 
+    border-right: 2px solid #7b2500; 
+    padding-right:15px;
+}
+
+#finish{
+    display:block;
+    background-color: #7b2500;
+    display:inline-block; 
+    padding: 10px 10px;
+    cursor:pointer;
+    border:none; 
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+#finish a{
+    text-decoration: none;
+    color:#EEDD99;
+    font-family: "Julius Sans One";
+    font-size: 13px;
+}
+
+.intro .short{
+    display:none;
+}
+
+.medium{
+    display:none;
+}
+
+.long{
+    display:none;
+}
+
+.intermediate{
+    display:none;
+}
+
+.advanced{
+    display:none;
+}
+
+
+#message{
+    display:none;
+}
+
+
+.chooseBtn{
+    background-color: #7b2500;
+    font-family: "Julius Sans One";
+    display:inline-block; 
+    text-decoration:none;
+    padding: 5px 10px;
+    font-size: 10px;
+    cursor:pointer;
+    color:#EEDD99;
+    border:none;   
+}
+
+.chooseBtnContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+
+}
+
+.chooseLvl{
+  margin-top: 5px;
+}
+
+
+#introBtn{
+   font-size: 13px;
+}
+
+#interBtn{
+   font-size: 13px;
+}
+
+#advBtn{
+   font-size: 13px;
+}
+
+.N1bd .readBtn, .N2bd .readBtn, .N3bd .readBtn{
+    padding: 10px 10px;
+    background-color: #7b2500;
+    font-family: "Julius Sans One"; 
+    text-decoration:none;
+    font-size: 13px;
+    cursor:pointer;
+    color:#EEDD99;
+    border:none;
+    margin:25px 10px 0 0;
+    width:100px;
+}
+
+.N1bd .readButtons, .N2bd .readButtons, .N3bd .readButtons{
+    display:inline-block;
+}
+
+
+.back{
+    padding: 10px 10px;
+    background-color: #7b2500;
+    font-family: "Julius Sans One";
+    text-decoration:none;
+    font-size: 13px;
+    cursor:pointer;
+    color:#EEDD99;
+    border:none;  
+    margin-left: -5px;
+    margin-top: 25px;
+}
+
+.next{
+    padding: 10px 10px;
+    background-color: #7b2500;
+    font-family: "Julius Sans One";
+    text-decoration:none;
+    font-size: 13px;
+    cursor:pointer;
+    color:#EEDD99;
+    border:none;
+    margin-top: 25px;
+    margin-left: 10px;
+
+   
+}
+
+
+.buttons{
+    display:block;
+}
+
+
+#narrTitle{
+     color:#020826;
+     font-size:75px;
+     text-align: center;
+     font-family: "Julius Sans One";
+}
+
+
+.itemImg{
+     margin:auto;
+     width: 50%;
+     height: auto;
+     padding-top: 20px;  
+}
+
+/*FOOTER- ALL PAGES*/
+.footer{
+    width:100%;
+    min-height: fit-content;
+    text-align:center;
+    padding:30px 0;
+    background-color: #7b2500;
+}
+
+.footer p{
+    text-align:center;
+    margin-top:10px;
+    font-family: "Archivo Narrow";
+    color:#020826;
+    justify-content: center;
+}
+
+.footer h4{
+    margin-bottom:25px;
+    margin-top:20px;
+    font-weight:600;
+    font-family: "Julius Sans One";
+    color: #020826;
+}
+
+.icons .website{
+   margin:0 13px;
+   cursor:pointer;
+   margin-top:10px;
+}
+
+
+
+
+
+/*NAVBAR ICONS- ALL PAGES*/
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  color:#EEDD99;
+  font-size:28px;
+  cursor: pointer;
+}
+
+
+/*NARRATIVE INTRO PAGE*/
+.narrContainer{
+  align-items: center;
+  padding-bottom:10px;
+  margin:auto;
+  margin-top:50px;
+}
+
+.narrIntro .content{
+  margin:auto;
+  margin-top:50px;
+  padding-top:0;
+  width:50%;
+}
+
+.narrBtn{
+  background-color: #7b2500;
+  padding:10px 10px;
+  border:none;
+}
+
+.narrBtn a{
+  text-decoration:none;
+  font-size: 13px;
+  font-family: "Julius Sans One";
+  color:#EEDD99;
+}
+
+.narrIntro .narrRow{
+  display: flex;
+  flex-direction: column; 
+  margin-bottom:30px;
+}
+
+.narrIntro .narrPageCol{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.narrIntro .narrPageCol p{
+  margin-top:15px;
+  width:50%;
+}
+
+.narrBtn{
+  flex:0 1 50px; /*dont allow grow, allow shrinking, preferred width */
+}
+
+.narrBtn a{
+  font-size:18px;
+}
+
+/*DISCLAIMER PAGE*/
+.disclaimer .content{
+  display:flex;
+  align-items: center;
+  margin-left:370px;
+  margin-top:20px;
+  padding-top:0;
+  width:50%;
+ 
+}
+
+.disclaimer .content ul li {
+  font-size: 15px;
+  font-family: "Julius Sans One";
+  color:#020826;
+}
+
+/*ABOUT PAGE*/
+
+.aboutCol{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom:50px;  }
+
+.aboutMainPage h1{
+   font-size: 45px;
+  }
+.aut{
+   padding:0;
+   position:relative;
+   display:inline-block;
+  }
+
+.aboutCol img{
+   width:350px;
+   height:400px;
+   display: block;
+  }
+
+.aboutLayer{
+   background:transparent;
+   top: 0;
+   left: 0;
+   width: 100%;              /* exactly matches image size */
+   height: 100%;
+   position:absolute;
+   margin: auto;
+   transition:0.5s;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+  }
+
+.aboutLayer:hover{
+    background:#020826;
+}
+
+.aboutLayer h3, .aboutLayer p{
+    width:100%;
+    color:transparent;
+    font-size:18px;
+}
+
+.aboutLayer:hover h3, .aboutLayer:hover p{
+    opacity:1;
+    color:#EEDD99;
+}
+
+
+/*DOCUMENTATION PAGE*/
+.documentation a{
+    text-decoration-color: #020826;
+    color:#020826;
+}
+
+.documentation .content{
+    width:80%;
+    display:flex;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+  
+  padding-top:0;
+  width:50%;
+ 
+}
+
+
+
+
+/* ---------- Interactive Map ---------- */
+  .interactive-map {
+    position: relative; 
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .interactive-map img {
+    width: 100%;
+    height:auto;
+    display:block;
+  }
+  
+  .marker {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #1d1a16;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .marker:hover {
+    z-index: 50;
+  }
+
+.marker::before{
+    content:"";
+    position:absolute;
+    top:-12px;
+    left:-12px;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:transparent;
+  }
+  
+  .tooltip {
+    position: absolute;
+    z-index: 60;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    background: #fbf7e8;
+    border: 1px solid #c8c0a8;
+    padding: 12px;
+    width: 220px;
+    display: none;
+    text-align: left;
+    pointer-events: auto;
+  }
+  
+  .marker:hover .tooltip,
+  .marker .tooltip:hover {
+    display: block;
+  }
+ 
+  .tooltip h4 {
+    margin: 0 0 6px 0;
+    font-family: "Julius Sans One";
+  }
+  
+  .tooltip a {
+    color: #1d1a16;
+    text-decoration: underline;
+    font-family: "Julius Sans One";
+    color:#020826;
+  }
+
+
+
+  
+
+
+
+@media(max-width:900px){
+
+
+
+    #logo{
+    margin:auto;
+    width:50px;
+    margin-left:-10px;
+    margin-top:5px;
+}
+
+   .nav-links ul li a, #themes{
+     font-size: 13px;   
+}
+
+    nav{
+     height:15px;
+}
+
+    .side{
+        max-width:10%;   
+    }
+
+   .narrativesCol .layer h3{
+     font-size: 20px;
+}
+
+   .narrativesCol img {
+     width:50%;
+}
+
+   .narrativesCol .layer{
+     width:50%;
+}
+
+   .mapPage .marker, .map .marker{
+    width:10px;
+    height:10px; 
+}
+
+   .mapPage .tooltip,.map .tooltip{
+    width:150px;
+    box-sizing: border-box;
+    left:10px;
+}
+
+    .mapPage .tooltip p, .map .tooltip p{
+    font-size: 13px;
+    width:80%;
+    margin-left:0px;
+}
+
+    .mapPage .tooltip h4, .map .tooltip h4{
+    font-size: 16px;
+    left:0px;
+    width: 90%;   
+}
+
+    .mapPage .tooltip a, .map .tooltip a{
+    font-size: 13px;
+}
+
+    .N1bd .content, .N2bd .content, .N3bd .content {
+        max-width:80%;  
+    }
+
+    .back{
+     margin-left:-10px;  
+}
+
+    .N1bd .row p, .N2bd .row p, .N3bd .row p {
+     margin-top:20px;  
+}  
+
+     .N2bd table, .N3bd table{
+     position:relative;
+     top:10px; 
+} 
+        
+    .N1bd .itemImg, .N2bd .itemImg, .N3bd .itemImg {
+     width:70%;
+}   
+   
+}
+
+
+
+@media(max-width:700px){
+
+    .disclaimer .content, 
+    .narrIntro .content{
+         margin-left:80px;
+         margin-top:20px;
+    }  
+
+    .mainHeader{
+        min-height: 70vh;
+        width:100%;
+    }
+
+     .mainHeader img{
+        width: 100%;
+    }
+
+ 
+    .mainTitle {
+        position:absolute;
+        font-size: 40px;
+        top:65%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align:center;
+    }
+
+    .header{
+        min-height: 30px;
+        width:100%;
+    }
+
+    nav{
+        min-height: 30px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .stop {
+        margin-top:15px;
+    }
+    .start{
+        margin-top:10px;
+    }
+    
+    #logo{
+        width: 60px;
+        margin-left:-5px;
+    }
+
+    .homeButton{
+        font-size: 15px;
+        
+    }
+
+    .themesContainer li{
+        display:block;
+        font-size: 15px;
+    }
+
+    .themesContainer {
+        position: absolute;
+        right:80px; 
+    }
+    
+    .nav-links{
+    position: absolute;
+    background: #7b2500;
+    height:600px;
+    width:200px;
+    top:42px;
+    right:-200px;
+    text-align:left;
+    z-index:100; 
+    transition:1s;
+    font-size:15px;
+    display:none;
+    }
+
+    .open{
+     display:block;
+     margin:10px;
+     cursor:pointer;
+     position:relative;
+}
+
+    .close{
+     display:block;
+     margin:10px;
+     cursor:pointer;
+}
+
+    .nav-links ul{
+     padding:30px;
+     
+    }
+
+    .nav-links ul li a{
+     font-size: 13px;
+     padding:6px;     
+    }
+
+    .website .webrow{
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+    
+    .website .webCol{
+    width:200px;
+    }
+
+     .mapCol img{
+    width:100%;
+}
+
+     .narrativesCol img{
+    width:100%;
+}
+
+     .narrativesCol .layer{
+    width:100%;
+}
+
+     .footer{
+     min-width:100%; 
+}
+
+    .description .row{
+         flex-direction:column;
+    }
+
+   .narrativesCol img{
+          width:100%;
+          height: auto;
+          display:block;
+          margin:auto;
+     }
+
+    .layer{
+    height:100%;
+    width: 100%;   
+}
+
+     .narrIntro .narrContainer p{
+         margin-top:15px;
+         width:80%;
+    }
+
+     .narrIntro .narrPageCol p{
+         margin-top:15px;
+         width:80%;
+    }
+
+     .mapPage .marker, .map .marker{
+          width:7px;
+         height:7px;
+    }
+
+     .mapPage .tooltip, .map .tooltip{
+         width:105px;
+         box-sizing: border-box;
+         left:10px;
+    }
+
+     .mapPage .tooltip p, .map .tooltip p{
+         font-size: 12px;
+         width:80%;
+         margin-left:0px;
+    }
+    
+    .mapPage .tooltip h4, .map .tooltip h4{
+          font-size: 13px;
+          left:0px;
+          width: 90%; 
+    }
+
+     .mapPage .tooltip a, .map .tooltip a{
+          font-size: 10px;
+      }
+
+  
+
+    .N1bd .side, .N2bd .side, .N3bd .side{
+        max-width:5%;
+    }
+
+    .N1bd .content, .N2bd .content, .N3bd .content {
+        max-width:90%;
+    }
+
+    .back {
+       margin-left:0px;
+    }
+
+    .itemImg{
+     margin:auto;
+     width: 70%;
+     height: auto;
+     padding-bottom: 20px;  
+}
+
+    .N1bd table{
+     margin-right:10px;
+     width:350px;
+     
+}
+    .N2bd table, .N3bd table{
+     width:350px;
+     margin:auto;
+     top:-10px;
+     
+}
+    .N1bd td, .N2bd td, .N3bd td{
+     font-size:13px;
+}
+
+    .N1bd .row p, .N2bd .row p, .N3bd .row p{
+     margin-top:15px;    
+}
+
+    .readButtons{
+     display:block;
+}
+
+    .readBtn{
+     display:block;
+     margin-right:0;
+}
+
+    .N2bd .back, .N3bd table {
+     margin-left:-10px;  
+}   
+
+    .itemImg{
+    width:30%;
+}
+
+.aboutCol{
+    flex-direction: column;
+    row-gap:25px;  }
+
+
+}
+

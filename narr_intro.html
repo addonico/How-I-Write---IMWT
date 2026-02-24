@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Narratives introduction</title>
+   <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="clay_style.css" id="t1">
+   <link rel="stylesheet" href="wood_style.css" id="t2" disabled>
+   <link rel="stylesheet" href="typewriter.css" id="t3" disabled>
+   <link rel="stylesheet" href="digital.css" id="t4" disabled>
+</head>
+<body class="narrIntro">
+   <section class="header">
+      <nav id="navbar">
+         <a href="index.html"><img src="images\logonobgcut.png" id="logo"></a>
+         <div class="nav-links" id="navLinks">
+            <span class="material-symbols-outlined close" onclick="hideMenu()">close</span>
+            <ul>
+               <li class="soloBtn"><a href="index.html">Home</a></li>
+               <li class="soloBtn"><a href="map.html">Map</a></li>
+               <li class="soloBtn"><a href="narr_intro.html">Narratives</a></li>
+               <li class="soloBtn"><a href="about.html">About</a></li>
+               <li class="soloBtn"><a href="documentation.html">Documentation</a></li>
+               <li class="soloBtn"><a href="disclaimer.html">Disclaimer</a></li>
+               </ul>
+         </div>
+         <div class="themesContainer">
+               <li>
+                  <a id="themes" href="" class="soloBtn">Themes</a>
+                  <ul class="dropdown">
+                  <li><button id="clay" class="changeButton" onclick="change('t1')"> Clay tablet</button></li>
+                  <li><button id="woodcut" class="changeButton" onclick="change('t2')"> Woodcut </button></li>
+                  <li><button id="typewriter" class="changeButton" onclick="change('t3')"> Typewriter</button></li>
+                  <li><button id="digital" class="changeButton" onclick="change('t4')">Digital </button></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <span class="material-symbols-outlined open" onclick="showMenu()">menu</span>
+      </nav>
+</section>
+
+<section class="content">
+   <h1>Narratives</h1>
+   <p>You can organize your visit according to your preferences and desired focus. 
+      We offer three different narratives: you can choose the one which appeals to you the most and change at any time if you wish to try something different. 
+      For each narrative, you can also choose the amount of details you wish to know: choose INTRO if you wish to know only the most relevant information; 
+      INTER if you want to know a bit more; ADVANCED if you wish to know more technical, in-depth information about each object. You can change your choice any time during the visit. </p>
+   
+   <div class="narrContainer">
+      <div class="narrRow">
+        <div class="narrPageCol">
+        <button class="narrBtn"><a href="narr1.html">Through Time</a></button>
+        
+        <p>Learn about the evolution of writing supports in a chronological perspective</p>
+        </div>
+      </div>
+      <div class="narrRow">
+      <div class="narrPageCol">
+      <button class="narrBtn"><a href="narr2.html">Among People</a></button>
+       <p>Learn more about the civilizations and people who have shaped uses and production of writing materials across the centuries.</p>
+       </div>
+      </div>
+      <div class="narrRow">
+         <div class="narrPageCol">
+           <button class="narrBtn"><a href="narr3.html">Across Uses</a></button>
+           <p>A short but complete description of how these materials were used, both in daily, private life or in the workplace</p>
+       </div> 
+       </div>  
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="footer" >
+       <h4>About us</h4>
+      <p>This is a university project for the final examination of the Information Modeling and Web Technology course at the University of Bologna, Italy.<br> 
+         All copyrights and related rights on the content remain with their original owners. 
+         <br>To know more, see our <a href="disclaimer.html" id="outroLink">disclaimer</a>. <br> All copyright on the typographic and layout choices are 2026 ©JiayiTeresa. 
+</p>
+      
+   </section>
+   <script src="howiwrite.js"></script>
+</body>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>How I Write</title>
+   <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+   
+   <link rel="stylesheet" href="clay_style.css" id="t1">
+   <link rel="stylesheet" href="wood_style.css" id="t2" disabled>
+   <link rel="stylesheet" href="typewriter.css" id="t3" disabled>
+   <link rel="stylesheet" href="digital.css" id="t4" disabled>
+</head>
+<body>
+   <section class="mainHeader">
+      <nav id="navbar">
+         <a href="index.html"><img src="images\logonobgcut.png" id="logo"></a>
+         <div class="nav-links" id="navLinks">
+            <span class="material-symbols-outlined close" onclick="hideMenu()">close</span>
+            <ul>
+               <li class="soloBtn"><a href="index.html">Home</a></li>
+               <li class="soloBtn"><a href="map.html">Map</a></li>
+               <li class="soloBtn"><a href="narr_intro.html">Narratives</a></li>
+               <li class="soloBtn"><a href="about.html">About</a></li>
+               <li class="soloBtn"><a href="documentation.html">Documentation</a></li>
+               <li class="soloBtn"><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+         </div>
+         <div class="themesContainer">
+               <li>
+                  <a id="themes" href="" class="soloBtn">Themes</a>
+                  <ul class="dropdown">
+                  <li><button id="clay" class="changeButton" onclick="change('t1')"> Clay tablet</button></li>
+                  <li><button id="woodcut" class="changeButton" onclick="change('t2')"> Woodcut </button></li>
+                  <li><button id="typewriter" class="changeButton" onclick="change('t3')"> Typewriter</button></li>
+                  <li><button id="digital" class="changeButton" onclick="change('t4')">Digital </button></li>
+                  </ul>
+               </li>
+         </div>
+         <span class="material-symbols-outlined open" onclick="showMenu()">menu</span>
+      </nav>
+      <div>
+         <h1 class="mainTitle">How I Write</h1>
+         <span class="material-symbols-outlined stop">pause_circle</span>
+      </div>
+   </section>
+
+   <section class="start">
+      <p>Or, how the writing supports changed through the centuries. <br> Shall we start?</p>
+      <a href="#descr" class="homeButton">Start</a>
+   </section>
+
+
+   <section class="description" id="descr">
+      <h1>The exhibit</h1>
+      <p>Welcome to <em>How I Write</em>, a modern exhibition on the history of writing from a practical perspective- the materials and tools that humanity has used through time to leave a written trail. The incredible technological inventions of the past century have deeply changed the way we approach writing: pens and paper have been substituted with their digital counterparts, opening up a new world of possibilities and functionalities. But the history of writing tools is not limited to the digital world: for millennia different materials and curious inventions have shaped and changed the way we wrote and communicated with each other. <br>But why is it important to know about this part of history?</p>
+
+      <div class="row">
+         <div class="descrCol">
+            <h3>Resources</h3>
+            <p>The choice of writing materials depended on the resources that we had at hand and is a mark of people’s creativity and ingenuity. By studying them, we can understand more about the cultural, political and economical contexts in which they were used.  </p>
+         </div>
+         <div class="descrCol">
+            <h3>People</h3>
+            <p>Different materials were destined for different uses: every choice was deliberate and spoke of practicality and forethought. </p>
+         </div>
+         <div class="descrCol">
+            <h3>Uses</h3>
+            <p> We’ve always written to communicate with each other, to help with everyday tasks, to leave tangible memories to the next generations. Behind every written text, there’s a writer; behind every innovation, an inventor.  </p>
+         </div>
+      </div>
+   </section>
+
+   <section class="website" id="website">
+      <h1>The website</h1>
+      <p>Use this website as a support during your visit!<br> 
+         It will guide you through the items and provide you with the information you need. <br>
+         You can also play with it and choose your preferred style: you can change it when you want!</p>
+
+      <div class="webrow">
+         <div class="webCol claybox">
+            <button class= "webBtn" onclick="change('t1')">Clay</button>
+            <p>Inspired by clay tablets from the early millennia </p>
+         </div>
+         <div class="webCol woodbox">
+            <button class= "webBtn" onclick="change('t2')">Woodcut</button>
+            <p>Influenced by 17th century xylography</p>
+         </div>
+      </div>
+      <div class="webrow">
+         <div class="webCol typebox">
+            <button class= "webBtn" onclick="change('t3')">Typewriter</button>
+            <p>Evoking 20th century typewriters </p>
+         </div>
+         <div class="webCol digibox">
+            <button class= "webBtn" onclick="change('t4')">Digital</button>
+            <p>Reflecting the modern evolution in the digital world</p>
+         </div>
+      </div>
+      <p>If you’re ready, <a href="#narrCP">start your visit!</a><br>
+         You can learn more about our exhibit <a href="documentation.html">here</a>. </p>
+   </section>
+
+<section class="map">
+      <h1>Map</h1>
+      <p>Use our map to navigate the exhibit!</p>
+      <div class="row">
+         <div class="mapCol">
+                 <div class="interactive-map">
+                 <img src="images/mapclean.png" alt="Museum map">
+    
+        <!-- ================= BLUE AREA ================= -->
+    
+        <!-- Amarna Letters -->
+        <div class="marker" style="top: 9%; left: 28%;">
+          <div class="tooltip">
+            <h4>Amarna Letters</h4>
+            <p>Clay tablet correspondence from the 14th century BCE.</p>
+            <a href="narr1.html#n1-amarna">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- Papyrus -->
+        <div class="marker" style="top: 9%; left: 40%;">
+          <div class="tooltip">
+            <h4>Papyrus</h4>
+            <p>Writing material made from papyrus plant in ancient Egypt.</p>
+            <a href="narr1.html#n1-papyrus">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- Vindolanda Tablet -->
+        <div class="marker" style="top: 9%; left: 52%;">
+          <div class="tooltip">
+            <h4>Vindolanda Tablet</h4>
+            <p>Roman wooden writing tablets discovered in Britain.</p>
+            <a href="narr1.html#n1-vindolanda">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- Inkwell -->
+        <div class="marker" style="top: 18%; left: 54%;">
+          <div class="tooltip">
+            <h4>Inkwell</h4>
+            <p>An early container for ink used in handwriting.</p>
+            <a href="narr1.html#n1-inkwell">Learn more →</a>
+          </div>
+        </div>
+    
+         <!-- Night-shining white -->
+         <div class="marker" style="top: 47%; left: 36%;">
+            <div class="tooltip">
+              <h4>Night-shining white</h4>
+              <p>An early container for ink used in handwriting.</p>
+              <a href="narr1.html#n1-night">Learn more →</a>
+            </div>
+          </div>
+        <!-- ================= PINK AREA  ================= -->
+    
+        <!-- IBM 6580 Displaywriter -->
+        <div class="marker" style="top: 47%; left: 60%;">
+          <div class="tooltip">
+            <h4>IBM 6580 Displaywriter</h4>
+            <p>An easy-to-use, low-cost IBM desktop text processing system released in 1980.</p>
+            <a href="narr1.html#n1-ibm6580">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- IBM 5150 -->
+        <div class="marker" style="top: 9%; left: 74%;">
+          <div class="tooltip">
+            <h4>IBM 5150</h4>
+            <p>The original IBM Personal Computer released in 1981.</p>
+            <a href="narr1.html#n1-ibm5150">Learn more →</a>
+          </div>
+        </div>
+    
+      <!-- Apple Lisa -->
+        <div class="marker" style="top: 14%; left: 83.5%;">
+          <div class="tooltip">
+            <h4>Apple Lisa</h4>
+            <p>One of the first personal computers with a graphical interface.</p>
+            <a href="narr1.html#n1-applelisa">Learn more →</a>
+          </div>
+        </div>
+    
+          <!-- U.S. Robotics Palm Pilot 5000 -->
+        <div class="marker" style="top: 9%; left: 64%;">
+          <div class="tooltip">
+            <h4>U.S. Robotics Palm Pilot 5000</h4>
+            <p>A personal digital assistant produced by Palm Inc in 1996.</p>
+            <a href="narr1.html#n1-robotics">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- Apple Cadillac PDA -->
+        <div class="marker" style="top: 20%; left: 83.5%;">
+          <div class="tooltip">
+            <h4>Apple Cadillac PDA</h4>
+            <p>A concept personal digital assistant device.</p>
+            <a href="narr1.html#n1-cadillac">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- ================= BROWN AREA================= -->
+    
+        <!-- Inkstone in the form of a Qin -->
+        <div class="marker" style="top: 52%; left: 27%;">
+          <div class="tooltip">
+            <h4>Inkstone (Qin)</h4>
+            <p>An inkstone shaped in the form of a Qin instrument.</p>
+            <a href="narr1.html#n1-inkstone">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- Gutenberg’s Bible -->
+        <div class="marker" style="top: 60%; left: 27%;">
+          <div class="tooltip">
+            <h4>Gutenberg’s Bible</h4>
+            <p>The first major book printed with movable type in Europe.</p>
+            <a href="narr1.html#n1-guten">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- Ten Bamboo Studio Manual -->
+        <div class="marker" style="top: 89%; left: 32%;">
+          <div class="tooltip">
+            <h4>Ten Bamboo Studio Manual</h4>
+            <p>A famous Chinese manual on painting and calligraphy.</p>
+            <a href="narr1.html#n1-bamboo">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- Quill Pen -->
+        <div class="marker" style="top: 89%; left: 44%;">
+          <div class="tooltip">
+            <h4>Quill Pen</h4>
+            <p>A writing tool made from a bird feather.</p>
+            <a href="narr1.html#n1-quill">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- Early Fountain Pen -->
+        <div class="marker" style="top: 75%; left: 54%;">
+          <div class="tooltip">
+            <h4>Early Fountain Pen</h4>
+            <p>An early form of pen with an internal ink reservoir.</p>
+            <a href="narr1.html#n1-fountain">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- ================= GREEN AREA ================= -->
+    
+        <!-- Sholes and Glidden -->
+        <div class="marker" style="top: 89%; left: 66%;">
+          <div class="tooltip">
+            <h4>Sholes and Glidden</h4>
+            <p>The first commercially successful typewriter.</p>
+            <a href="narr1.html#n1-sholes">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- Blickensderfer No.5 -->
+        <div class="marker" style="top: 89%; left: 74%;">
+          <div class="tooltip">
+            <h4>Blickensderfer No.5</h4>
+            <p>A compact typewriter with a unique keyboard layout.</p>
+            <a href="narr1.html#n1-blicken">Learn more →</a>
+          </div>
+        </div>   
+    
+      <!-- Underwood Model 5 -->
+        <div class="marker" style="top: 72%; left: 83.5%;">
+          <div class="tooltip">
+            <h4>Underwood Model 5</h4>
+            <p>A highly influential early typewriter design.</p>
+            <a href="narr1.html#n1-underwood">Learn more →</a>
+          </div>
+        </div>
+    
+        <!-- Olivetti Lettera 22 -->
+        <div class="marker" style="top: 50%; left: 82%;">
+          <div class="tooltip">
+            <h4>Olivetti Lettera 22</h4>
+            <p>A portable typewriter known for its elegant design.</p>
+            <a href="narr1.html#n1-olivetti">Learn more →</a>
+          </div>
+        </div>
+    
+       <!-- IBM Selectric -->
+        <div class="marker" style="top: 50%; left: 58%;">
+          <div class="tooltip">
+            <h4>IBM Selectric</h4>
+            <p>A revolutionary electric typewriter with a typeball.</p>
+            <a href="narr1.html#n1-selectric">Learn more →</a>
+          </div>
+        </div>
+    
+     </div>
+         </div>
+      </div>
+</section>
+
+   <section class="narratives" id="narrCP">
+      <h1>Narratives</h1>
+       <p>We tell our story from three different perspectives: how writing materials changed through time, who invented new tools or proposed new uses and how each material was used. <br>
+         You can choose one or more! </p>
+      <div class="row">
+         <div class="narrativesCol">
+            <a href="narr1.html"><img src="images\throughtime.png">
+            <div class="layer">
+               <a href="narr1.html"><h3>Through time<br> Tour lenght: circa 80 min</h3></a>
+            </div>
+         </div>
+          <div class="narrativesCol">
+            <img src="images\amongpeople.png">
+            <div class="layer">
+               <a href="narr2.html"><h3>Among People <br> Tour lenght: circa 45 min.</h3></a>
+            </div>
+         </div>
+          <div class="narrativesCol">
+            <img src="images\acrossusescorr.png">
+            <div class="layer">
+              <a href="narr3.html"><h3>Across uses <br> Tour lenght: circa 30 min</h3></a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="footer">
+      <h4>About us</h4>
+      <p>This is a university project for the final examination of the Information Modeling and Web Technology course at the University of Bologna, Italy.<br> 
+         All copyrights and related rights on the content remain with their original owners. 
+         <br>To know more, see our <a href="disclaimer.html" id="outroLink">disclaimer</a>. <br> All copyright on the typographic and layout choices are 2025 © XY
+</p>
+      
+   </section>
+
+
+
+<script src="howiwrite.js"></script>
+</body>
+</html>
