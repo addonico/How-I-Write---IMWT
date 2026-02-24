@@ -1013,9 +1013,39 @@ border-radius: 10px;
     margin-top:80px;
   }
   
-  .N1bd .N1Col .intro,
+ .N1bd .N1Col .intro,
   .N2bd .N2Col .intro,
   .N3bd .N3Col .intro{
+    grid-area:desc;
+    justify-self:stretch;
+    width: 100%;
+    max-width: none;
+    margin:20px 0 0;
+  border: 2px solid #00ffc6;
+  border-radius: 14px;
+  padding: 18px 22px;
+  background: none;
+  box-sizing: border-box;
+  }
+ 
+  .N1bd .N1Col .intermediate,
+  .N2bd .N2Col .intermediate,
+  .N3bd .N3Col .intermediate{
+    grid-area:desc;
+    justify-self:stretch;
+    width: 100%;
+    max-width: none;
+    margin:20px 0 0;
+  border: 2px solid #00ffc6;
+  border-radius: 14px;
+  padding: 18px 22px;
+  background: none;
+  box-sizing: border-box;
+  }
+
+  .N1bd .N1Col .advanced,
+  .N2bd .N2Col .advanced,
+  .N3bd .N3Col .advanced{
     grid-area:desc;
     justify-self:stretch;
     width: 100%;
@@ -1070,6 +1100,34 @@ border-radius: 10px;
   .N1bd .N1Col .intro p,
   .N2bd .N2Col .intro p,
   .N3bd .N3Col .intro p{
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    display: block;
+  }
+
+  .N1bd .N1Col .intermediate p,
+  .N2bd .N2Col .intermediate p,
+  .N3bd .N3Col .intermediate p{
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    display: block;
+  }
+  
+  .N1bd .N1Col .advanced p,
+  .N2bd .N2Col .advanced p,
+  .N3bd .N3Col .advanced p{
     text-align: left;
     margin: 0;
     width: 100%;
