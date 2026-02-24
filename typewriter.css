@@ -33,23 +33,7 @@ body {
   .mapPage .marker,.map .marker{
     width:5px;
     height:5px;
-
-}
-
-   .webrow{
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    row-gap: 14px;
-    column-gap: 0;
   }
-
-  .webrow .webCol{
-    width: 92%;
-    max-width: 520px;
-    flex: 0 0 auto;
-  }
-    
 }
 
 
@@ -721,6 +705,22 @@ li:hover ul.dropdown{
     font-size: 14px;  
 }
 
+/* --- Mobile (<=700px): stack Website boxes vertically --- */
+@media (max-width: 700px){
+  .webrow{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 14px;
+    column-gap: 0;
+  }
+
+  .webrow .webCol{
+    width: 92%;
+    max-width: 520px;
+    flex: 0 0 auto;
+  }
+}
+
 .webBtn{
     border:none;
     background-color: transparent;
@@ -1096,7 +1096,6 @@ display:none;
   box-sizing: border-box;
   }
   
-  
   .N1bd .N1Col.readButtons,
   .N2bd .N2Col.readButtons,
   .N3bd .N3Col.readButtons{
@@ -1145,15 +1144,32 @@ display:none;
     }
 
     .webrow{
-    flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 20px;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+    .webrow .webCol{
+      flex: 1 1 260px;
+      max-width: 360px;
+    }
   }
+
+/* Override the 900px wrap rules on phones: force 1-column stack */
+@media (max-width: 700px){
+  .webrow{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    row-gap: 14px;
+    column-gap: 0;
+  }
+
   .webrow .webCol{
-    flex: 1 1 260px;
-    max-width: 360px;
-   }
+    width: 92%;
+    max-width: 520px;
+    flex: 0 0 auto;
   }
+}
 
 .N1bd .row{
   padding-top: 0 !important;  
