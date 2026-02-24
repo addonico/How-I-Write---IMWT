@@ -617,24 +617,39 @@ border-radius: 10px;
     z-index: 10;
 }
 
+.marker::before{
+  content:"";
+  position:absolute;
+  top:-12px;
+  left:-12px;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:transparent;
+}
 
+.marker:hover{
+  z-index: 50;
+}
 
 .tooltip {
     position: absolute;
-    top: -10px;
-    left: 20px;
+    top: 50%;
+    left: 18px;
     width: 220px;
     padding: 12px;
     background: #141820;
     border: 1px solid #00ffc6;
-    color: #00ffc6;
+    
     display: none;
-    z-index: 30;
+    z-index: 60;
     text-align: left;
-    pointer-events: none; 
+    pointer-events: auto; 
+    transform: translateY(-50%);
 }
 
-.marker:hover .tooltip {
+.marker:hover .tooltip, 
+.marker .tooltip:hover{
     display: block;
 }
 
