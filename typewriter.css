@@ -1052,6 +1052,16 @@ display:none;
     .N1bd .N1Col img.itemImg{
       max-width: 520px;
     }
+
+    .webrow{
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .webrow .webCol{
+    flex: 1 1 260px;
+    max-width: 360px;
+   }
   }
 
 .N1bd .row{
